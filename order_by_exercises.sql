@@ -11,7 +11,18 @@ ORDER BY first_name ASC, last_name ASC
 
 SELECT *
 FROM employees
-WHERE last_name LIKE '%E';
+WHERE first_name IN ('Irena','Vidya','Maya')
+ORDER BY last_name ASC, first_name ASC
+
+SELECT *
+FROM employees
+WHERE last_name LIKE '%E'
+ORDER BY emp_no ASC;
+
+SELECT *
+FROM employees
+WHERE last_name LIKE '%E'
+ORDER BY emp_no DESC;
 
 SELECT * FROM employees WHERE hire_date LIKE '199%';
 
